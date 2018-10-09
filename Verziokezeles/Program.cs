@@ -30,7 +30,17 @@ namespace Verziokezeles
                 } 
                 
             }
+            int d = a[0];
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] < d)
+                {
+                    d = a[i];
+                }
+
+            }
             Console.WriteLine("A legnagyobb szám {0}",b);
+            Console.WriteLine("A legkisseb szám {0}", d);
             Console.ReadKey();
         }
     }
