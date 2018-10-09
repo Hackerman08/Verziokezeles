@@ -10,8 +10,10 @@ namespace Verziokezeles
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Kérem adja meg a tömb hózzsát");
+            int c = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Kérem adjón meg 10 számót");
-            int[] a = new int[10];
+            int[] a = new int[c];
             for (int i = 0; i < a.Length; i++)
             {
                 Console.WriteLine("Kérem a {0} ez a számót",i+1);
