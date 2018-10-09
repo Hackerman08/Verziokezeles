@@ -11,14 +11,46 @@ namespace Verziokezeles
         static void Main(string[] args)
         {
             Console.WriteLine("Kérem adja meg a tömb hózzsát");
-            int c = Convert.ToInt32(Console.ReadLine());
+            int c;
+
+            string g = Console.ReadLine();
+
+
+            if (int.TryParse(g, out c) == true)
+            {
+
+
+            }
+            else
+            {
+                Console.WriteLine("HIBA");
+                Console.ReadKey();
+                return;
+            }
+
+
+
+
+
             Console.WriteLine("Kérem adjón meg 10 számót");
             int[] a = new int[c];
             for (int i = 0; i < a.Length; i++)
             {
-                Console.WriteLine("Kérem a {0} ez a számót",i+1);
-                a[i] = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Kérem a {0} ez a számót", i + 1);
 
+                string w = Console.ReadLine();
+               
+                
+                if(int.TryParse(w,out a[i])==true)
+                {
+                    
+
+                }else
+                {
+                    Console.WriteLine("HIBA");
+                    Console.ReadKey();
+                    return;
+                }
 
             }
             int b=a[0];
